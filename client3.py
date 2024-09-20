@@ -44,7 +44,7 @@ def getRatio(price_a, price_b):
     """ ------------- Update this function ------------- """
     """when price_b is 0 avoid Throwing ZeroDivisionError"""
     if (price_b == 0):
-        return
+        raise ValueError("Denominator cannot be zero")
     return price_a/price_b
 
 
